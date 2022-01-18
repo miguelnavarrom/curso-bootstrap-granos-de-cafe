@@ -182,5 +182,32 @@
                         auto --> palabra clave y debe de ir forzozamente
 
     -Re-ordenamiento
+        sintaxis
+            .order-tamaño-número
+
+                El valor por defecto de la clase order es 0
+                La clase se debe de aplicar a las columnas
+
+                
+
+            .order-[tamaño]-first --> coloca la columna al inicio  --> order: -1  ya que -1 < 0
+            .order-[tamaño]-last  --> coloca la columna al final   --> order: 6
+
+
+                    donde:
+                    tamaño --> es opcional
+                    número --> de 1 a 5
+
+                    
 
     -Anidación
+        Se trata introducir columnas dentro de columnas
+
+        para anidar columnas dentro de otra columna
+        solo se debe de agregar dentro de la columna
+        un div con la clase row y dentro de este las
+        columnas que queramos anidar
+
+        cada vez que agregamos aun elemento la clase row,
+        esta fila se compone de 12 columnas no importa que
+        este anidada

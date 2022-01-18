@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anidación de columnas</title>
+
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .fila{
+            border: 3px solid blue;
+            background-color: lightskyblue;
+            margin-bottom: 15px;
+        }
+
+        .columna{
+            background-color: rgb(247, 205, 151);
+            border: 2px solid rgb(252, 143, 0);
+            padding: 10px;
+        }
+
+        /* .columna:nth-child(even){
+            background-color: rgb(9, 182, 44);
+            border: 2px solid yellow;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <h1>Anidación</h1>
+        </div>
+        <!-- Fila 1 -->
+        <!-- por defecto el valor de cada columna es order-0 -->
+         <div class="row fila">
+             <!-- columna 1 -->
+            <div class="col-6 columna">
+                columna 1
+                <div class="row fila">
+                    <div class="col columna">
+                        columna anidada 1
+                        <div class="row">
+                            <div class="col columna">1</div>
+                            <div class="col columna">2</div>
+                            <div class="col columna">3</div>
+                        </div>
+                         
+                    </div>
+                    <div class="col columna">columna anidada 2</div>
+                </div>
+            </div>
+            <div class="col-6 columna">
+                columna 2
+            </div> 
+        </div>
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

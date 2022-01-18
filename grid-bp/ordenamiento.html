@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenamientos</title>
+
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .fila{
+            border: 2px solid blue;
+            background-color: lightskyblue;
+            margin-bottom: 15px;
+        }
+
+        .columna{
+            background-color: rgb(247, 205, 151);
+            border: 2px solid rgb(252, 143, 0);
+            padding: 10px;
+        }
+
+        .columna:nth-child(even){
+            background-color: rgb(9, 182, 44);
+            border: 2px solid yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <h1>Ordenamiento</h1>
+        </div>
+        <!-- Fila 1 -->
+        <!-- por defecto el valor de cada columna es order-0 -->
+         <div class="row fila">
+                <div class="col-2 order-1 columna">columna 1</div>
+                <div class="col-2 order-lg-5 columna">columna 2</div> 
+                <div class="col-2 order-2 columna">columna 3</div>
+         </div>
+
+
+        <div>
+            <h1>.order-first</h1>
+        </div>
+         <!-- Fila 2 -->
+         <div class="row fila">
+            <div class="col-2 columna">columna 1</div>
+            <div class="col-2 columna">columna 2</div> 
+            <div class="col-2 order-first columna">columna 3</div>
+        </div>
+
+        <div>
+            <h1>order-last</h1>
+        </div>
+         <!-- Fila 3 -->
+         <div class="row fila">
+            <div class="col-2 order-lg-last columna">columna 1</div>
+            <div class="col-2 columna">columna 2</div> 
+            <div class="col-2 columna">columna 3</div>
+        </div>
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
