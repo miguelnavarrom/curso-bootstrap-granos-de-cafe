@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no-gutters</title>
+
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .fila{
+            border: 3px solid blue;
+            background-color: lightskyblue;
+            margin-bottom: 15px;
+            height: 180px; /* se utilizo para mostrar el funcionamiento del cross axix*/
+        }
+
+        .columna{
+            background-color: lightgreen;
+            border: 2px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Fila 1 -->
+         <div class="row g-0 fila">
+             <div class="col-3 columna">columna 1 g-0</div>
+             <div class="col-3 columna">columna 2 g-0</div>
+             <div class="col-3 columna">columna 3 g-0</div>
+         </div>
+
+         <!-- Fila 2 -->
+         <div class="row g-3 fila">
+            <div class="col-3 columna">columna 1 g-valor</div>
+            <div class="col-3 columna">columna 2 g-valor</div>
+            <div class="col-3 columna">columna 3 g-valor</div>
+         </div>
+         <!-- Fila 3 -->
+         <div class="row g-md-2 fila">
+            <div class="col-3 columna">columna 1 g-pantalla-valor</div>
+            <div class="col-3 columna">columna 2 g-pantalla-valor</div>
+            <div class="col-3 columna">columna 3 g-pantalla-valor</div>
+         </div>
+
+         <!-- Fila 4-->
+         <div class="row gx-1 fila">
+            <div class="col-3 columna">columna 1 gx-valor</div>
+            <div class="col-3 columna">columna 2 gx-valor</div>
+            <div class="col-3 columna">columna 3 gx-valor</div>
+        </div>
+
+        <!-- Fila 5 -->
+        <div class="row gx-lg-1 fila">
+           <div class="col-3 columna">columna 1 gx-pantalla-valor</div>
+           <div class="col-3 columna">columna 2 gx-pantalla-valor</div>
+           <div class="col-3 columna">columna 3 gx-pantalla-valor</div>
+        </div>
+        <!-- Fila 6-->
+        <div class="row gy-1 fila">
+            <div class="col-3 columna">columna 1 gy-valor</div>
+            <div class="col-3 columna">columna 2 gy-valor</div>
+            <div class="col-3 columna">columna 3 gy-valor</div>
+        </div>
+
+        <!-- Fila 7 -->
+        <div class="row gy-md-1 fila">
+           <div class="col-3 columna">columna 1 gy-pantalla-valor</div>
+           <div class="col-3 columna">columna 2 gy-pantalla-valor</div>
+           <div class="col-3 columna">columna 3 gy-pantalla-valor</div>
+
+
+     </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

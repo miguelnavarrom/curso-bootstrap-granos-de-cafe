@@ -1,0 +1,186 @@
+* Clases CSS Layout
+
+    -Contenedor
+        .container
+            centrar el contenido de forma horizontal
+
+        .container-{tamaño}
+            centrar el contenido del elemento pero en un tamaño especial o en especifico
+
+            Tamaños --> sm, md, lg, xl, xxl
+            ejemplo class="container-lg"
+
+        .container-fluid
+            Abarca el 100% de la pagina en todo los tamaños
+            El elemento siempre ocupara el 100% de la pantalla visible
+
+
+    -Fila
+        .row
+            .row-cols-{numero}
+                numero indica cuantas columnas habra en la fila
+
+            .row-cols-tamaño-numero
+                xs   menos de 576px
+                sm   Mas de 576px y menos de 768px
+                md   Mas de 768px y mas de 992px
+                lg   Mas de 992px y mas  de 1200px
+                xl   Mas de 1200 y mas de 1400px
+                xxl mas de 1400px
+
+            .row-cols-auto
+                el ancho de las columnas que esta dentro de la row sera igual al contenido  que que guarda
+
+
+    -Columna
+        .col
+            .col
+                Divide las 12 columnas entre el numero de elementos que hay dentro del elemento row
+
+            .col-auto
+                El ancho del elemento es igual a su contenido
+
+            .col-{numero}
+                El ancho de las columnas es igual anumero que le pases
+
+            .col-{tamaño}
+                xs   Menos de 576px
+                sm   Mas de 576px y menos de 768px
+                md   Mas de 768px y mas de 992px
+                lg   Mas de 992px y mas  de 1200px
+                xl   Mas de 1200 y mas de 1400px
+                xxl mas de 1400px 
+
+                Casi no se utiliza
+            
+            .col-{tamaño}-auto
+                xs   Menos de 576px
+                sm   Mas de 576px y menos de 768px
+                md   Mas de 768px y mas de 992px
+                lg   Mas de 992px y mas  de 1200px
+                xl   Mas de 1200 y mas de 1400px
+                xxl mas de 1400px
+
+                Casi no se utiliza
+
+            .col-{tamaño}-numero     (con actualizacion para bootstrap5)
+                xs   Menos de 576px
+                sm   Mas de 576px y menos de 768px
+                md   Mas de 768px y mas de 992px
+                lg   Mas de 992px y mas  de 1200px
+                xl   Mas de 1200 y mas de 1400px
+                xxl mas de 1400px  
+
+                si hay varias columnas en una fila estas deben de sumar siempre 12 columnas por fila
+
+                Esta clase si es muy utilizada
+
+        .w-100
+            Esta clase nos permite hacer saltos entre columnas
+            Permite dividir una fila las n veces que queramos
+
+
+    -Alineación
+
+        
+        nota: Por defecto el grid de bootstrap se basa en flex box
+        nota: Flex box se basa en dos ejes que son main axis y cross axis
+        nota: por defecto todos los elementos son alineados a la izquierda en modo horizontal o main axis
+
+        *sintaxis
+            eje-modo-ubicacion
+
+                eje:
+                    main axis  --> justify    por defecto horizontal pero se puede cambiar
+                    cross axis --> align      por defecto vertical pero se puede cambiar
+
+                modo:
+                    content --> grupo
+                    item    --> lineal
+                    self    --> individual y se le aplica directamente al elemento hijo, al ser individual debe ser así
+
+
+                ubicacion: el valor por defecto de align es strech es decir el elemento se ajusta al alto de la fila
+                    align:  start  --> inicio
+                            center --> centro
+                            end    --> final
+
+                    justify: start   --> inicio
+                             center  --> centro
+                             end     --> final
+                             around  --> alrededor
+                             between --> entre
+                             evenly  --> igualmente, igual que around pero todos los espacios iguales alrededor y entre elementos
+
+
+    -no-gutters (sin canales)
+
+            .g-0
+
+                Elimina los margenes de los elementos de clase row  en sus cuatro lados
+
+                Esta clase va siempre junto con el elemento que contenga la clase row
+
+                no unicamente podemos eliminar agregar margenes sino agregarlos
+
+            .g-{valor}
+            
+                agrega margenes iguales a los cuatro lados del elemento
+                
+
+            .g-{pantalla}{valor}
+
+                
+        gutters en horizontal
+
+            .gx-{valor}
+
+            .gx-{pantalla}-{valor}
+
+        gutters en vertical
+
+            .gy-{valor}
+
+            .gy-{pantalla}-{valor}
+
+        
+                    donde:
+                    valor = 1 | 2 | 3| 4 | 5
+
+                    donde:
+                    pantalla = xs | sm | md | lg | xl | xxl
+                    valor = 1 | 2 | 3| 4 | 5
+
+
+        
+        Nota:tener en cuenta que row aplica margen por defecto como ya se comento al inicio
+
+
+    -Desplazamientos
+
+            .offset  (compensación)
+                coloca un espacio de forma manual a nuestras columnas
+
+                sintaxis
+                offset-[tamaño]-{numero}
+
+            .margin
+
+                sintaxis
+                {dirección}-[tamaño]-auto
+
+            
+                donde:
+                        tamaño --> opcional,  xs , sm, md, lg, xl o xxl
+                        número --> número de columnas
+
+                        direccion: es la direccion del margin y peude ser
+
+                            ms --> margin star o margin left
+                            me --> margin end o margin rigth
+
+                        auto --> palabra clave y debe de ir forzozamente
+
+    -Re-ordenamiento
+
+    -Anidación

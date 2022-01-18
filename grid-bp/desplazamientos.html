@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desplazamientos</title>
+
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .fila{
+            border: 3px solid blue;
+            background-color: lightskyblue;
+            margin-bottom: 15px;
+            /* height: 180px; */
+        }
+
+        .columna{
+            background-color: lightgreen;
+            border: 2px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <h1></h1>
+        </div>
+        <!-- Fila 1 -->
+         <div class="row cols-12 fila">
+             <div class="col columna">columna 1</div>
+             <div class="col columna">columna 2</div>
+             <div class="col columna">columna 3</div>
+             <div class="col columna">columna 4</div>
+             <div class="col columna">columna 5</div>
+             <div class="col columna">columna 6</div>
+             <div class="col columna">columna 7</div>
+             <div class="col columna">columna 8</div>
+             <div class="col columna">columna 9</div>
+             <div class="col columna">columna 10</div>
+             <div class="col columna">columna 11</div>
+             <div class="col columna">columna 12</div>
+         </div>
+
+
+        <div>
+            <h1></h1>
+        </div>
+         <!-- Fila 2 -->
+         <div class="row  fila">
+            <div class="col-3 offset-3 columna">columna</div>
+            
+         </div>
+
+        <div>
+            <h1></h1>
+        </div>
+         <!-- Fila 3 -->
+         <div class="row fila">
+            <div class="col-3 columna me-auto">columna 1</div>
+            <div class="col-3 columna">columna 2</div> 
+         </div>
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
