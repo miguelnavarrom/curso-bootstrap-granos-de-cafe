@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes</title>
+    <!--  Integracion de CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+
+    <!-- Estilos -->
+    <style>
+        body{
+            background-color: #2f2f2f;
+        }
+        .caja{
+            --tamano: 180px;
+            height: var(--tamano);
+            width: var(--tamano);
+            margin: 10px;
+            background-color: #212529;
+            color: #FFF;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .caja-rectangular{
+            width: 70%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <h1 class="col-12 text-warning">Bordes</h1>
+            <article class="border border-primary caja">1</article>
+            <article class="border-top border-secundary caja">2</article>
+            <article class="border-end border-success caja">3</article>
+            <article class="border-bottom border-danger caja">4</article>
+            <article class="border-start border-warning caja">5</article>
+            <article class="border border-info border-top-0 caja">6</article>
+            <article class="border border-light border-end-0 caja">7</article>
+            <article class="border border-dark  caja">8</article>
+            <article class="border border-white caja">9</article>
+        </div>
+
+        <div class="row">
+            <h2 class="col-12 text-warning">Bordes Redondeados</h2>
+            <article class="rounded rounded-0 caja">1</article>
+            <article class="rounded-circle caja">2</article>
+            <article class="rounded-pill caja caja-rectangular">3</article>
+            <article class="rounded-top caja">4</article>
+            <article class="rounded-end caja">5</article>
+            <article class="rounded-bottom caja">6</article>
+            <article class="rounded-start caja">7</article>
+            <article class="rounded-1 caja">8</article>
+            <article class="rounded-3 caja">9</article>
+        </div>
+    </section>
+    
+    <!-- Integracion de JS bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

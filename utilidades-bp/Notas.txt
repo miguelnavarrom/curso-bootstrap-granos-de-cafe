@@ -1,0 +1,178 @@
+-COLORES
+    Colores
+        .primary      --> azul    
+        .secondary    --> gris
+        .success      --> verde
+        .danger       --> rojo
+        .warning      --> amarillo
+        .info         --> turquesa
+        .light        --> blanco -gris
+        .dark         --> negro 80%
+        .white        --> blanco
+        .transparent  --> transparente      No disponible para color de texto
+        .white-50     --> blanco al 50%     No disponible para color de fondo
+        .black-50     --> negro al 50%      No disponible para color de fondo
+        .muted        --> Gris claro        No disponible para color de fondo
+        .body         --> negro al 100%     No disponible para color de fondo
+
+        para que la clase tenga efecto se debe indicar
+        si el color se alicara a un fondo a una fuente
+        o a un borde
+
+    Colores de fondo
+        Sintaxis
+            bg-{color}   (cualquier color de la tabla anterior exepto los indicados)
+
+
+    Colores de texto
+        Sintaxis
+            text-{color} (cualquier color de la tabla anterior excepto transparent)
+
+-BORDES
+    Añadir bordes
+
+        .border
+            añade un borde a los cuatro lados del elemento
+
+        .border-{lado}
+
+            donde lado:
+                top
+                end
+                bottom
+                start
+
+    Eliminar bordes
+        .border-0
+        -border-{lado}-0
+
+            donde lado:
+                top
+                end
+                bottom
+                start
+
+    Añadir color de BORDES
+        .border-{color}
+
+            donde color:
+                -primary      --> azul    
+                -secondary    --> gris
+                -success      --> verde
+                -danger       --> rojo
+                -warning      --> amarillo
+                -info         --> turquesa
+                -light        --> blanco -gris
+                -dark         --> negro 80%
+                -hite        --> blanco
+
+        Antes de anadir color al borde se indica cuantos bordes son con las clases anteriores
+
+
+-BORDES REDONDEADOS
+
+    Añadir bordes redondeados
+        .rounded
+            redondea las cuatro esquinas del elemento
+
+        .rounded-circle
+            redondea al 100% las cuatro esquinas del elemento
+
+        .rounded-pill
+            redonde las cuatro esquinas del elemento pero este tiene que ser un rectangulo para ver su efecto
+            Exclusi va para crear elementos con forma de pastilla
+
+        .rounded-{lado}
+            donde lado:
+                -top
+                -end
+                -bottom
+                -start
+
+    Eliminar bordes redondeados
+
+        .rounded-0
+            anula los bordes redondeados de un elemeto con bordes redondeados
+
+    tamaños de bordes redondeados
+        .rounded-{tamaño}
+
+            donde tamaño:
+
+                -1
+                -2
+                -3
+
+
+-FLOAT
+    Estas clases se utilizan para flotar elementos a la derecha o a la izquierda
+
+    En ocasiones cuando flotamos elementos se pierden otras propiedades
+    debemos utilizar la propiedad  clear: both; la cual esta integrada en
+    boothstrap 5 con la clase .clearfix
+
+    .float-{dirección}
+
+    .float-{tamaño}-{dirección}
+
+    donde:
+        dirección --> start | end | none
+        tamaño    --> xs | sm | md  | lg | xl | xxl
+
+-CLEAR
+
+    En ocasiones cuando flotamos elementos se pierden otras propiedades
+    debemos utilizar la propiedad  clear: both; la cual esta integrada en
+    boothstrap 5 con la clase .clearfix
+
+    la clase se deba de aplicar al elemento padre de los elementos flotantes
+
+    .clearfix
+
+-DISPLAY
+    Esta clase nos ayuda para indicar que disposicion tentra el elemnto en pantalla
+    En otras palabras si va a abarcar el 100% de pantalla o solo lo que ocupe el elemento
+
+        .d-tipo display 
+
+        .d-tamaño-tipo display
+
+        donde:
+            tamaño    --> xs | sm | md  | lg | xl | xxl
+            tipo display --> inline   -- los elementos solo abarcan el espacio que ocupan
+                             block    -- abarcan el 100 del tamaño
+                             none     
+
+
+
+
+    Los parrafos tienen por defecto un display:block
+    Los span tienen por defecto un display:inline
+
+
+-EMBED    Incrustar
+    Nos sirve para inscrustar una pagina dentro de nuestra página
+
+    .ratio                    se agregan al elemento padre que tiene nuestro elemento inscrustado
+
+    .ratio-{tamaño de video}   se agregan al elemento padre que tiene nuestro elemento inscrustado
+
+    .embed-responsive-item                se añade al elemento que vamos a incrustar
+
+        donde:
+            tamaño de video --> 21x9 (21:9)
+                                16x9 (16:9)
+                                4x3  (4:3)
+                                1x1  (1:1)
+
+
+-ICONO DE CIERRE  (boton de cierre)
+
+    .btn-close    
+        Se aplica al elemento que se selecciono como boton
+
+        ademas: 
+        se necesita un atributo llamado aria-label="Close" y se coloca tambien en el elemento que se utilizara como boton
+
+        se necesita un icono
+
