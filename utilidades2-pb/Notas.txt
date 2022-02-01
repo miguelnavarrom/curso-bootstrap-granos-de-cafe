@@ -1,0 +1,62 @@
+-Espaciado  (Hacemos referencia a margin y padding)
+
+    *Espaciado:
+        sintaxis:
+
+            espacioUBICACION-Tamaño
+
+            espacioUBICACION-pantalla-Tamaño
+
+            donde:
+                Espacio: m  | p           (margin y padding respectivamente)
+
+                Ubicación: t | b | s      (top, bottom, start, end, vertical y horizontal respectivamente)
+                           e | x | y
+
+                Tamaño:    0 | 1 (= 0.5rem) | 2         
+                           3 | 4 | 5 (= 2.5rem)| auto
+
+                pantalla:  xs| sm | md | lg | xl | xxl
+
+
+    *Centrado horizontal:  (podemos centrar en elemento de tipo bloque en el eje de las x)
+
+            .mx-auto  
+
+    *Margenes negativos: (Estos margenes negativo sestan desabilitados por defecto en bootstrap 5 deben de ser habilitados desde sass, revisar la documentación oficial)
+
+        sintaxis:
+
+            mUBICACION-nTamaño
+
+            mUBICACION-pantalla-nTamaño
+
+            m  --> margin
+            n  --> negativo
+            donde:
+
+                Ubicación: t | b | s      (top, bottom, start, end, vertical y horizontal respectivamente)
+                           e | x | y
+
+                Tamaño:    0 | 1 (= 0.5rem) | 2         
+                           3 | 4 | 5 (= 2.5rem)| auto
+
+                pantalla:  xs| sm | md | lg | xl | xxl
+
+
+
+    
+
+-Desbordamiento
+
+-Sombras
+
+-Posicionamiento
+
+-Tamaño
+
+-Texto
+
+-Visibilidad
+
+-Alineación de elementos

@@ -24,9 +24,22 @@
             bg-{color}   (cualquier color de la tabla anterior exepto los indicados)
 
 
-    Colores de texto
+    Colores de texto  - 
         Sintaxis
             text-{color} (cualquier color de la tabla anterior excepto transparent)
+                        (recomendado solo para  textos normales como parrafos, citas textuales, fitcaption etc.)
+
+                primary
+                ...
+
+            link-{color} --> para textox que actuan como hipervinculos (<a></a>, estilos en :hover y en :focus)
+
+            text-opacity-{valor}  --> Agregar opacidad al color de texto que hayamos elegido o definido
+                                      (Se debe de definir un color de texto antes e aplicar esta clase)
+
+                valor: 25 | 50 | 75
+
+
 
 -BORDES
     Añadir bordes

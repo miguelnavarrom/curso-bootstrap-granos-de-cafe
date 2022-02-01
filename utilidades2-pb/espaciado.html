@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaciado</title>
+
+    <!--  Integracion de CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+
+    <style>
+        .caja {
+            --tamano: 150px;
+            height: var(--tamano);
+            width: var(--tamano);
+            border: 10px ridge yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="text-primary">Espaciados</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="caja bg-primary mb-2 px-3">Caja 1</div>
+            <div class="w-100"></div>
+
+            <!-- <div class="caja bg-success ms-5 px-3">Caja 2</div>
+            <div class="w-100"></div>
+            <div class="caja bg-danger mt-2 mx-auto">Caja 3</div> -->
+
+            <div class="caja bg-info mt-n3">Margen negativo</div>
+
+        </div>
+    </div>
+
+
+    <!-- Integracion de JS bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
