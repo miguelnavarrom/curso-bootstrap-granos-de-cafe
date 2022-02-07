@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbordamiento</title>
+
+    <!--  Integracion de CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+
+    <style>
+        .caja {
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="text-primary">Desbordamientos</h1>
+
+    <div class="container">
+        <div class="row">
+             <div class="col-3 bg-warning mr-3 overflow-auto caja">
+                 <h2>overflow-auto</h2>
+                 <p class="text-danger">
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Incidunt ducimus enim ipsum odit deserunt magnam sunt velit,
+                     laudantium aliquam placeat officia dignissimos illo hic rem
+                     quisquam minus, ut voluptates eos. Incidunt soluta facere nam?
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Libero impedit saepe, quasi modi ullam tempora quo nulla ea
+                  </p>
+             </div>
+
+             <div class="col-3 bg-info mr-3 overflow-hidden caja">
+                 <h2>overflow-hidden</h2>
+                <p class="text-warning">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Incidunt ducimus enim ipsum odit deserunt magnam sunt velit,
+                    laudantium aliquam placeat officia dignissimos illo hic rem
+                    quisquam minus, ut voluptates eos. Incidunt soluta facere nam?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus maxime similique eius blanditiis, natus
+                 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Integracion de JS bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

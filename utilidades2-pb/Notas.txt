@@ -23,7 +23,7 @@
 
             .mx-auto  
 
-    *Margenes negativos: (Estos margenes negativo sestan desabilitados por defecto en bootstrap 5 deben de ser habilitados desde sass, revisar la documentación oficial)
+    *Margenes negativos: (Estos margenes negativo estan desabilitados por defecto en bootstrap 5 deben de ser habilitados desde sass, revisar la documentación oficial)
 
         sintaxis:
 
@@ -43,20 +43,145 @@
 
                 pantalla:  xs| sm | md | lg | xl | xxl
 
+-Desbordamiento -- Todos los elementos que se salen de su contenedor padre
 
+    .overflow-auto
+            Oculta el contenido desbordado pero activa una barra para poder observar el contenido que se estaba desbordando
 
-    
-
--Desbordamiento
+    .overflow-hidden
+            Oculta el contenido desbordado pero no activa una barra
 
 -Sombras
 
--Posicionamiento
+    *Añadir
+        .shadow-sm    --> sombra pequeña
 
--Tamaño
+        .shadow       --> sombra regular  
+
+        .shadow-lg    --> sombra grande
+
+    *Eliminar
+
+        .shadow-none  --> ELiminar sombra
+
+-Posicionamiento
+    sintaxis:
+        position-tipo
+
+        donde:
+            tipo --> static       permanece estatico, jamas se va a mover y es el valor por defecto de la regla position de css
+                     relative
+                     absolute     hace que el elemnto alque se le aplico pierda su lugar y se mueva junto a su contenedor padre mas cercano que tenga un posicionamiento relativo
+                     *fixed       Posiciona de manera fija el elemento con respecto al viewport
+                     *sticky      Pega el elemento de acuerdo  a la propiedad offset que se establezca
+
+
+            *fixed
+                .fixed-top       Posiciona de manera fija el elemento en la parte de arriba 0 px de margen y lo deja fijo ahí
+
+            *sticky
+                .sticky-top      toma su posición original pero una vez que se hace scroll el elemento se pega y mantiene en la parte de arriba 0px de margen
+
+-Tamaño (en elementos, divs)
+    *Relativos al elemento padre
+    Sintaxis:
+
+        {lado}-{Tamaño}
+
+        donde:
+
+            lado --> horizontal (ancho) = w | mw
+                     vertical (alto)   = h | mh
+
+            tamaño -->  25 | 50 | 75 | 100
+
+    *Relativos a la ventana
+    Sintaxis:
+
+        {lado}-100
+
+        donde:
+
+        lado -->  Horizontal (ancho) = w | vw 
+                  Vertical (alto)    = h | vh
 
 -Texto
+    *Alineación  --> nos permiten alinear el texto a un lado en especial
+        
+            text-{dirección}
 
--Visibilidad
+            text-{pantalla}-{dirección}
 
--Alineación de elementos
+            Donde:
+
+                Dirección --> start | center | end | justify
+
+                Pantalla  --> xs | sm | md | lg | xl | xxl
+
+    *Transformaciones  --> transformar a minusculas, a mayusculas, o solo  en mayusculas la primera letra de cada palabra
+
+        sintaxis:
+            text-{transformación}
+
+             Donde:
+
+             Transformación --> lowercase
+                                uppercase
+                                capitalize
+
+
+    *Peso de fuente   --> negrita delgada o media
+    sintaxis:
+
+        .fw-{peso}
+
+            donde:
+                peso --> bold | bolder | normal | light | lighter
+
+    *Cursivas
+    sintaxis:
+
+        .fst-normal
+
+        .fst-italic
+
+    *Reestablecer color  restablece el color de un texto a l de su contenedor padre
+    sintaxis:
+
+            .text-reset
+
+    *Decoración de texto
+            
+            .text-decoration-none          --> Elimina la linea debajo de los links
+
+            .text-decoration-underline     --> Coloca una line debajo del texto
+ 
+            .text-decoration-line-through  --> Coloca una line atravezando el texto
+
+    *Ajuste y desbordamiento de texto
+
+        .text-wrap       --> Nos sirve para envolver el texto que se esta desbordando
+                             y se tiene que utilizar la clase badge
+
+            .badge
+
+        .text-truncate   --> Anade tres puntos suspensivos cuando el texto se desborda 
+                             y solo funciona cuando el elemento tiene un display in block
+
+
+-Visibilidad    --> Nos permite ver  o no un elemento
+
+    .visible
+
+    .invisible
+
+
+-Alineación de elementos   --> Alineamiento de texto en forma vertical
+    sintaxis:
+
+    align-{direccion}
+
+    donde:
+
+        Dirección   --> baseline | top      | middle
+                        bottom   | text-top | text-bottom

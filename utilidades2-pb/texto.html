@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto</title>
+
+    <!--  Integracion de CSS bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row row-cols-1">
+            <h1>Textos</h1>
+            <hr/>
+            <h2>Ajuste y desbordamiento</h2>
+            <div class="col-6 bg-light">
+                <p class="bg-primary text-wrap badge" style="width: 70px; height: 70px">
+                    Este texto debe ajustarse
+                </p>
+            </div>
+            <div class="col-6">
+                <p class="bg-success text-truncate" style="width: 70px; height: 70px">
+                    Este texto debe ajustarse
+                </p>
+            </div>
+            <hr/>
+            <h2>Decoración de textos</h2>
+            <p class="text-decoration-underline">This text has a line underneath it.</p>
+            <p class="text-decoration-line-through">This text has a line going through it.</p>
+            <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+            <hr/>
+            <h2>Restablecer color</h2>
+            <p class="text-success">
+                Este texto es de color verde y el
+                <a href="" class="text-reset">
+                    ancla lo tiene que heredar
+                </a>
+            </p>
+            <hr/>
+            <h2>Cursivas</h2>
+            <p class="fst-normal">Texto normal</p>
+            <p class="fst-italic">Texto un cursiva</p>
+            <hr/>
+            <h2>Peso de fuente</h2>
+            <p class="fw-bold">Texto bold</p>
+            <p class="fw-bolder">Texto bolder</p>
+            <p class="fw-normal">Texto normal</p>
+            <p class="fw-light">Texto light</p>
+            <p class="fw-lighter">Texto lighter</p>
+            <hr/>
+
+            <hr/>
+            <h2>Transformaciones de texto</h2>
+            <p class="text-lowercase">Transformación minúscula</p>
+            <p class="text-uppercase">Transformación mayúscula</p>
+            <p class="text-capitalize">Transformación capital</p>
+            <hr/>
+            <h2>Alineación</h2>
+            <p class="text-start">Izquierda</p>
+            <p class="text-end">Derecha</p>
+            <p class="text-center">Centro</p>
+            <p class="text-justify">
+            Justify
+            </p>
+            <p class="text-center text-md-end text-lg-start">
+                Pantalla especial centrado
+            </p>
+            <hr/>
+        </div>
+    </div>
+
+    <!-- Integracion de JS bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
